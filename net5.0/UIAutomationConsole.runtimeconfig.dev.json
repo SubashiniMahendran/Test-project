@@ -1,0 +1,11 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\SubashiniMahendran\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SubashiniMahendran\\.nuget\\packages",
+      "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "D:\\WPF\\20.3.0.47\\ToolboxNuGetPackages"
+    ]
+  }
+}
