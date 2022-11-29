@@ -23,7 +23,7 @@ jobs:
       inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net5.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
+        arguments: 'Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
       inputs:
@@ -45,7 +45,7 @@ jobs:
       inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net5.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
+        arguments: 'Desktop-test-project/carousel-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
     
   - task: PublishBuildArtifacts@1
       inputs:
@@ -67,7 +67,7 @@ jobs:
       inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net5.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/cardview-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+        arguments: 'Desktop-test-project/cardview-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
       inputs:
@@ -89,7 +89,7 @@ jobs:
       inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net5.0\'
-        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/toolbaradv-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
+        arguments: 'Desktop-test-project/toolbaradv-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
       inputs:
