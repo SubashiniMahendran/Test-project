@@ -22,7 +22,7 @@ jobs:
   - task: CmdLine@1
       inputs:
         filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net5.0\'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: '"https://svn.syncfusion.com/svn/studio/trunk/work_area" "Desktop-test-project/carousel-test" development "syncfusion-licensing,null;shared-wpf,null"'
     
   - task: PublishBuildArtifacts@1
@@ -44,7 +44,7 @@ jobs:
   - task: CmdLine@1
       inputs:
         filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net5.0\'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
     
   - task: PublishBuildArtifacts@1
@@ -66,7 +66,7 @@ jobs:
   - task: CmdLine@1
       inputs:
         filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net5.0\'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/cardview-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
@@ -88,7 +88,7 @@ jobs:
   - task: CmdLine@1
       inputs:
         filename: 'UIAutomationConsole.exe'
-        workingFolder: '$(Build.SourcesDirectory)\net5.0\'
+        workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/toolbaradv-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
