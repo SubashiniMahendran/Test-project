@@ -7,7 +7,7 @@ trigger:
 - master
 
 jobs:
-- job: carousel-test
+- job: CarouselTest
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -20,16 +20,16 @@ jobs:
         height: '768'
 
   - task: CmdLine@1
-      inputs:
+    inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: '"https://svn.syncfusion.com/svn/studio/trunk/work_area" "Desktop-test-project/carousel-test" development "syncfusion-licensing,null;shared-wpf,null"'
     
   - task: PublishBuildArtifacts@1
-      inputs:
+    inputs:
         pathtoPublish: 'D:\AutomationReports\' 
 
-- job: carousel-test-complete
+- job: CarouselTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -42,16 +42,16 @@ jobs:
         height: '1080'
 
   - task: CmdLine@1
-      inputs:
+    inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null;shared-base,null;shared-windows,null;sfshared-xaml,null'
     
   - task: PublishBuildArtifacts@1
-      inputs:
+    inputs:
         pathtoPublish: 'D:\AutomationReports\'
 
-- job: cardview-test-complete
+- job: CardviewTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -64,16 +64,16 @@ jobs:
         height: '1080'
 
   - task: CmdLine@1
-      inputs:
+    inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/cardview-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
-      inputs:
+    inputs:
         pathtoPublish: 'D:\AutomationReports\'
 
-- job: toolbaradv-test-complete
+- job: ToolbaradvTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -86,11 +86,11 @@ jobs:
         height: '1080'
 
   - task: CmdLine@1
-      inputs:
+    inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
         arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/toolbaradv-test-complete development syncfusion-licensing,null;shared-wpf,null;tools-wpf,null'
     
   - task: PublishBuildArtifacts@1
-      inputs:
+    inputs:
         pathtoPublish: 'D:\AutomationReports\'
