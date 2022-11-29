@@ -23,7 +23,7 @@ jobs:
     inputs:
         filename: 'UIAutomationConsole.exe'
         workingFolder: '$(Build.SourcesDirectory)\net6.0\'
-        arguments: '"https://svn.syncfusion.com/svn/studio/trunk/work_area" "Desktop-test-project/carousel-test" development "syncfusion-licensing,null;shared-wpf,null"'
+        arguments: 'https://svn.syncfusion.com/svn/studio/trunk/work_area Desktop-test-project/carousel-test development syncfusion-licensing,null;shared-wpf,null'
     
   - task: PublishBuildArtifacts@1
     inputs:
