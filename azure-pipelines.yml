@@ -7,7 +7,7 @@ trigger:
 - master
 
 jobs:
-- job: carousel-test
+- job: CarouselTest
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -29,7 +29,7 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\' 
 
-- job: carousel-test-complete
+- job: CarouselTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -51,7 +51,7 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
 
-- job: cardview-test-complete
+- job: CardviewTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
@@ -73,7 +73,7 @@ jobs:
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
 
-- job: toolbaradv-test-complete
+- job: ToolbaradvTestComplete
   timeoutInMinutes: 0
   pool:
     name: "Desktop-xaml-vmss"
