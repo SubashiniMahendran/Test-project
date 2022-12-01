@@ -28,6 +28,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\' 
+        ArtifactName: carousel-test
 
 - job: CarouselTestComplete
   timeoutInMinutes: 0
@@ -50,6 +51,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: carousel-test-complete
 
 - job: CardviewTestComplete
   timeoutInMinutes: 0
@@ -72,6 +74,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: cardview-test-complete
 
 - job: ToolbaradvTestComplete
   timeoutInMinutes: 0
@@ -94,3 +97,4 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
         pathtoPublish: 'D:\AutomationReports\'
+        ArtifactName: toolbaradv-test-complete
